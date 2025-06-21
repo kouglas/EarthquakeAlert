@@ -62,3 +62,5 @@ struct EarthquakeAlertTests {
         #expect(decoded.longitude == -155.434173583984)
     }
 }
+
+
