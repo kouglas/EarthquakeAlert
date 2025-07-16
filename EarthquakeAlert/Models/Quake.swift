@@ -13,7 +13,7 @@ struct Quake {
     let time: Date
     let code: String
     let detail: URL
-    let tsunami: Int
+//    let tsunami: Int
 }
 
 
@@ -45,8 +45,8 @@ extension Quake: Decodable {
               let place = rawPlace,
               let time = rawTime,
               let code = rawCode,
-              let detail = rawDetail,
-              let tsunami = rawTsunami
+              let detail = rawDetail
+//              let tsunami = rawTsunami
                 
         else {
             throw QuakeError.missingData
@@ -57,7 +57,7 @@ extension Quake: Decodable {
         self.time = time
         self.code = code
         self.detail = detail
-        self.tsunami = tsunami
+//        self.tsunami = tsunami
     }
     
 }
